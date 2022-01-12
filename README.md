@@ -1,4 +1,4 @@
-# iCyber: Artificially intelligent simple chat bot
+# iCyber: artificially intelligent simple chat bot
 
 iCyber is an artificial intelligence (AI) chat bot that uses neural networks and Natural Language Processing (NLP) to analyse text inputted from the user and response accordingly. The bot is written in Python and uses the PyTorch open-source machine learning library developed by Facebook's AI Research lab (FAIR). The program utilises the NLP basics such as tokenisation, stemming, and bag of words techniques.
 
