@@ -7,5 +7,4 @@ The aim of the chat bot is to provide users with the latest information on cyber
 ###### References:
 [Chat Bot With PyTorch - NLP And Deep Learning](https://www.python-engineer.com/posts/chatbot-pytorch/) – Tutorial I used to understand deep learning, NLP and building the chat bot itself in python.
 [Let’s Build an Intelligent Chatbot](https://www.kdnuggets.com/2019/12/build-intelligent-chatbot.html) – Utilising the Wikipedia python framework.
-
 [Contextual Chatbots with Tensorflow](https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077) – Extra reading and context.
