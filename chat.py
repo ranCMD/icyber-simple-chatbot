@@ -32,11 +32,11 @@ print("iCyber: Hi, I'm a bot who can give you the latest updates on cyber securi
 while True:
     senetence = input('You: ')
 
-    # Ending conversation
+    # Ending conversation.
     if senetence == "quit":
         break
 
-    # Searching Wikipedia for subject
+    # Searching Wikipedia for subject.
     if "tell me about" in senetence:
         print("Checking Wikipedia...")
         reg_ex = re.search('tell me about (.*)', senetence)
@@ -48,7 +48,7 @@ while True:
         except Exception as e:
             print("No content has been found")
 
-    # General conversation with bot
+    # General conversation with bot.
     elif "tell me about" not in senetence:
         senetence = tokenize(senetence)
         x = bag_of_words(senetence, all_words)

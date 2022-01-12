@@ -9,10 +9,10 @@ class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         # Three linear layers:
         super(NeuralNet, self).__init__()
-        self.l1 = nn.Linear(input_size, hidden_size) # First layer
-        self.l2 = nn.Linear(hidden_size, hidden_size) # Second layer
-        self.l3 = nn.Linear(hidden_size, num_classes) # Third layer
-        self.relu = nn.ReLU() # Actuation function
+        self.l1 = nn.Linear(input_size, hidden_size) # First layer.
+        self.l2 = nn.Linear(hidden_size, hidden_size) # Second layer.
+        self.l3 = nn.Linear(hidden_size, num_classes) # Third layer.
+        self.relu = nn.ReLU() # Actuation function.
 
     def forward(self, x):
         out = self.l1(x)
