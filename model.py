@@ -1,7 +1,9 @@
-import torch
-import torch.nn as nn
+import torch # Library for deep learning developed and maintained by Facebook.
+import torch.nn as nn # Base class used to develop all neural network models.
 
-# model.py: A feed forward hidden neural net with two hidden layers
+"""
+model.py: A feed forward hidden neural net with two hidden layers
+"""
 
 class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):

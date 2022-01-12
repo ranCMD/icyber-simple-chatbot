@@ -1,17 +1,19 @@
-import json
-from tkinter import Label
+import json # Used to work with JSON data.
+from tkinter import Label # The standard Python interface to the Tk GUI toolkit (Python's de facto standard GUI).
 
-from torch import optim
-from nltk_utils import tokenize, stem, bag_of_words
-import numpy as np
+from nltk_utils import tokenize, stem, bag_of_words # Imports said functions from nltk_utils.py
+import numpy as np # Numerical Python, is a library consisting of multidimensional array objects and a collection of routines for processing those arrays.
 
-import torch
-import torch.nn as nn
-from torch.utils.data import Dataset, DataLoader
+import torch # Library for deep learning developed and maintained by Facebook.
+from torch import optim # Package implementing various optimisation algorithms.
+import torch.nn as nn # Base class used to develop all neural network models.
+from torch.utils.data import Dataset, DataLoader # Dataset and loader that allows use of pre-loaded datasets as well as your own data.
 
-from model import NeuralNet
+from model import NeuralNet # Imports NeuralNet class from model.py
 
-# train.py: The dataset for the AI
+""" 
+train.py: The dataset for the AI.
+"""
 
 with open('cyber-intents.json', 'r') as f:
     intents = json.load(f)

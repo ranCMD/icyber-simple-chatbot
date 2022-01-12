@@ -1,12 +1,12 @@
-import random
-import json
-import torch
-from model import NeuralNet
-from nltk_utils import bag_of_words, tokenize
-import wikipedia as wk
-import re, string, unicodedata
+import random # To generate random numbers.
+import json # Used to work with JSON data.
+import torch # Library for deep learning developed and maintained by Facebook.
+from model import NeuralNet # Imports NeuralNet class from model.py
+from nltk_utils import bag_of_words, tokenize # Imports said functions from nltk_utils.py
+import wikipedia as wk # Access and parse data from Wikipedia.
+import re, string, unicodedata # Provides regular expression matching operations.
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') # Utilises the GPU, otherwise use CPU
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') # Utilises the GPU, otherwise use CPU.
 
 # Opens file in read mode
 with open('cyber-intents.json', 'r') as f:

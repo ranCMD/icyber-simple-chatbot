@@ -1,8 +1,12 @@
-import nltk
-import numpy as np
-from nltk.stem.api import StemmerI
-#nltk.download('punkt')
-from nltk.stem.porter import PorterStemmer
+import nltk # Platform used for building programs that work with human language data for applying in statistical natural language processing.
+from nltk.stem.api import StemmerI # Processing interface for removing morphological affixes from words (known as stemming).
+#nltk.download('punkt') # Tokenizer that divides a text into a list of sentences by using an unsupervised algorithm to build a model for abbreviation words, collocations, and words that start sentences.
+from nltk.stem.porter import PorterStemmer # Word stemmer based on the Porter stemming algorithm.
+import numpy as np # Numerical Python, is a library consisting of multidimensional array objects and a collection of routines for processing those arrays.
+
+"""
+nltk_utils.py: Handles the natural language processing of the program.
+"""
 
 stemmer = PorterStemmer()
 
@@ -20,8 +24,8 @@ def bag_of_words(tokenized_sentence, words):
     words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
     bog   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
     """
-    sentence_words = [stem(word) for word in tokenized_sentence] # Stems each word
-    bag = np.zeros(len(words), dtype=np.float32) # Initialises bag of words with 0 for each word
+    sentence_words = [stem(word) for word in tokenized_sentence] # Stems each word.
+    bag = np.zeros(len(words), dtype=np.float32) # Initialises bag of words with 0 for each word.
     for idx, w in enumerate(words):
         if w in sentence_words: 
             bag[idx] = 1
