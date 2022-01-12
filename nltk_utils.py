@@ -11,9 +11,13 @@ nltk_utils.py: Handles the natural language processing of the program.
 stemmer = PorterStemmer()
 
 def tokenize(sentance):
+    # Divide strings into lists of substrings.
+    # Can be used to find the words and punctuation in a string.
     return nltk.word_tokenize(sentance)
 
 def stem(word):
+    # Used to remove morphological affixes from words, leaving only the word stem.
+    # Organising, organise, organised = organis.
     return stemmer.stem(word.lower())
 
 def bag_of_words(tokenized_sentence, words):

@@ -8,7 +8,7 @@ import re, string, unicodedata # Provides regular expression matching operations
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') # Utilises the GPU, otherwise use CPU.
 
-# Opens file in read mode
+# Opens file in read mode.
 with open('cyber-intents.json', 'r') as f:
     intents = json.load(f)
 
@@ -28,7 +28,7 @@ model.eval()
 
 bot_name = "iCyber"
 print("iCyber: Hi, I'm a bot who can give you the latest updates on cyber security threats and intel! \niCyber: Ask me a question in plain english. Type 'quit' to exit. \niCyber: Type 'tell me about' (case sensitive) followed by a subject which I will look up for you eg. log4j, malware, virus")
-# What the user types in the chat
+# What the user types in the chat.
 while True:
     senetence = input('You: ')
 
